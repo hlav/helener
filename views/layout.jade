@@ -18,25 +18,25 @@ html
   body
   #page-top(data-spy='scroll', data-target='.navbar-fixed-top')
     // Navigation
+  .container
   nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
-    .container
-      .navbar-header
-        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
-          i.fa.fa-bars
-        a.navbar-brand.page-scroll(href='#page-top')
-          //- i.fa.fa-play-circle
-          span.light Personal Website
-          //- |  Bootstrap
-      .collapse.navbar-collapse.navbar-right.navbar-main-collapse
-        ul.nav.navbar-nav
-          // Hidden li included to remove active class from about link when scrolled up past about section
-          li.hidden
-            a(href='#page-top')
-          li
-            a.page-scroll(href='#about') About
-          li
-            a.page-scroll(href='#download') Download
-          li
-            a.page-scroll(href='#contact') Contact
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+        i.fa.fa-bars
+      a.navbar-brand.page-scroll(href='#page-top')
+        //- i.fa.fa-play-circle
+        span.light aha-helene
+        //- |  Bootstrap
+    .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+      ul.nav.navbar-nav
+        // Hidden li included to remove active class from about link when scrolled up past about section
+        li.hidden
+          a(href='#page-top')
+        li
+          a.page-scroll(href='#about') About
+        li
+          a.page-scroll(href='#resume') Résumé
+        li
+          a.page-scroll(href='#contact') Contact
   
-block content
+  block content
